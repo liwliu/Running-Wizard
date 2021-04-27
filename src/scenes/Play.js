@@ -5,7 +5,8 @@ class Play extends Phaser.Scene {
     }
 
     preload() {
-
+        this.load.image('wizard', 'assets/wizard.png');
+        this.load.image('background', 'assets/Desert_Layout_1.png')
     }
 
     create() {
@@ -13,7 +14,7 @@ class Play extends Phaser.Scene {
     }
 
     update() {
-        
+
     }
 
 }

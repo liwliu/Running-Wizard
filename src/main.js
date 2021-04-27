@@ -1,8 +1,8 @@
 // main.js
 let config = {
     type: Phaser.CANVAS, 
-    width: 640,
-    height: 480,
+    width: 1080,
+    height: 720,
     scene: [Menu, Play]
 }
 
@@ -15,4 +15,3 @@ let scrollSpeed = 1;
 let highScore = 0;
 let p1Score;
 
-let keyF, keyR, keyUP, keyDOWN;
