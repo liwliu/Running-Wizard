@@ -6,21 +6,17 @@ class Wizard extends Phaser.GameObjects.Sprite{
         scene.add.existing(this);
         this.isFiring = false;
         this.moveSpeed = 2;
+        this.lives = 3;
 
     }
 
-    create() {
-        cursors = this.input.keyboard.createCursorKeys();
-        
-
-    }
 
     update() {
 
-        if(cursors.up.isDown && this.y >= borderUISize + this.width) {
-            this.y += this.moveSpeed;
-        } else if(cursors.down.isDown && this.y <= game.config.width - borderUISize) {
-            this.y -= this.moveSpeed
+        if(keyUP.isDown ){//&& this.y >= borderUISize + this.width) {
+            this.y -= this.moveSpeed;
+        } else if(keyDOWN.isDown && this.y <= game.config.width - borderUISize) {
+            this.y += this.moveSpeed
         }
     }
 
